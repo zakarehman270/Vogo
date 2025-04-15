@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/": ["./"],
+      "@layouts": ["./@next/layouts"],
+      "@config": ["./@next/config"],
+      "@utils": ["./@next/utils"],
+      "@store": ["./@next/store"],
+      "@hooks": ["./@next/hooks"],
+      "@context": ["./@next/context"],
+      "@sections": ["./@next/sections"],
+      "@components": ["./@next/components"],
+      "@dictionaries": ["./@next/dictionaries"],
+      "@providers": ["./@next/providers"],
+      "@constants": ["./@next/constants"],
+      "@lib": ["./@next/lib"],
+      "@assets": ["./public/assets"],
+      "@routes": ["./@next/routes"],
+      "@types": ["./@next/types"],
+      "@guards": ["./@next/guards"],
+      "@services": ["./@next/services"]
+    }
+  }
+}
