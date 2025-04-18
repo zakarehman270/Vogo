@@ -22,18 +22,18 @@ const PricingPlan = () => {
 
                     <div className="flex items-center gap-2 mb-1 sm:mb-2">
                         <img src="/assets/location.svg" alt="location" className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-                        <h2 className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-[27px] font-bold text-[#FF7F50]">
+                        <h2 className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-[26px] font-bold text-[#FF7F50]">
                             GOER - IMPACT WORKER
                         </h2>
                     </div>
 
-                    <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[22px] font-thin leading-[1.5] sm:leading-[1.7] md:leading-[32px] text-[#797878] mb-3 sm:mb-4 md:mb-6">
+                    <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[21px] font-[400] leading-[1.5] sm:leading-[1.7] md:leading-[32px] text-[#797878] mb-3 sm:mb-4 md:mb-6">
                         Ultricies purus dolor viverra mi laoreet at cursus justo.
                     </p>
 
                     <div className="mb-4 sm:mb-6 md:mb-8">
-                        <span className="text-[#FF7F50] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[57px] leading-[100%] font-thin">$199</span>
-                        <span className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[21px] text-[#FF7F50] leading-[100%] font-thin ml-1 sm:ml-2">per month</span>
+                        <span className="text-[#FF7F50] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[57px] leading-[100%] font-thin lg:font-medium">$9.99</span>
+                        <span className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[21px] text-[#FF7F50] leading-[100%] font-[300] ml-1 sm:ml-2">per month</span>
                     </div>
 
                     <hr className='border-[#E4E8FC] mb-3 sm:mb-4 md:mb-5' />
@@ -76,18 +76,18 @@ const PricingPlan = () => {
 
                     <div className="flex items-center gap-2 mb-1 sm:mb-2">
                         <img src="/assets/plant.svg" alt="plant" className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-                        <h2 className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-[27px] font-bold text-white">
+                        <h2 className="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-[26px] font-bold text-white">
                             Grower - IMPACT CREATOR
                         </h2>
                     </div>
 
-                    <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[22px] font-thin leading-[1.5] sm:leading-[1.7] md:leading-[32px] text-white mb-3 sm:mb-4 md:mb-6">
+                    <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[21px] font-[400] leading-[1.5] sm:leading-[1.7] md:leading-[32px] text-white mb-3 sm:mb-4 md:mb-6">
                         Ultricies purus dolor viverra mi laoreet at cursus justo.
                     </p>
 
                     <div className="mb-4 sm:mb-6 md:mb-8">
-                        <span className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[57px] leading-[100%] font-thin">$199</span>
-                        <span className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[21px] text-white leading-[100%] font-thin ml-1 sm:ml-2">per month</span>
+                        <span className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[57px] leading-[100%] font-thin lg:font-medium">$9.99</span>
+                        <span className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[21px] text-white leading-[100%] font-[300] ml-1 sm:ml-2">per month</span>
                     </div>
 
                     <hr className='border-white mb-3 sm:mb-4 md:mb-5' />

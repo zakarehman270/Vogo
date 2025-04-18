@@ -2,10 +2,11 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "./UI/Button";
+import Link from "next/link";
 
 export default function VOGONavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -46,10 +47,10 @@ export default function VOGONavbar() {
         <div className="flex items-center justify-between">
           {/* Logo and Tagline */}
           <div className="flex items-center">
-            <img 
-              src="/assets/go-global.png" 
-              className="w-32 sm:w-40 md:w-48 lg:w-[160px]" 
-              alt="logo" 
+            <img
+              src="/assets/go-global.png"
+              className="w-32 sm:w-40 md:w-48 lg:w-[160px]"
+              alt="logo"
             />
           </div>
 
@@ -71,10 +72,14 @@ export default function VOGONavbar() {
 
           {/* Desktop Login/Register Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button className="text-white cursor-pointer text-sm xl:text-base hover:text-cyan-400 transition-colors duration-300 font-medium">
-              Login
-            </button>
-            <Button text={"Register"} className="text-sm xl:text-base" />
+            <Link href="/auth/login">
+              <button className="text-white cursor-pointer text-sm xl:text-base hover:text-cyan-400 transition-colors duration-300 font-medium">
+                Login
+              </button>
+            </Link>
+            <Link href="/auth/register">
+              <Button text={"Register"} className="text-sm xl:text-base" />
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -101,7 +106,7 @@ export default function VOGONavbar() {
         {/* Mobile Navigation Menu with Animation */}
         <AnimatePresence>
           {isMenuOpen && (
-            <motion.div 
+            <motion.div
               className="lg:hidden mt-3 overflow-hidden bg-gray-900 rounded-lg shadow-xl"
               initial="closed"
               animate="open"
@@ -109,42 +114,46 @@ export default function VOGONavbar() {
               variants={menuVariants}
             >
               <div className="flex flex-col p-4 space-y-3 sm:space-y-4">
-                <motion.a 
-                  href="#" 
+                <motion.a
+                  href="#"
                   className="text-white hover:text-cyan-400 py-2 px-2 transition-colors duration-300 border-b border-gray-700 text-sm sm:text-base"
                   variants={itemVariants}
                 >
                   Home
                 </motion.a>
-                <motion.a 
-                  href="#" 
+                <motion.a
+                  href="#"
                   className="text-gray-300 hover:text-cyan-400 py-2 px-2 transition-colors duration-300 border-b border-gray-700 text-sm sm:text-base"
                   variants={itemVariants}
                 >
                   Impacts
                 </motion.a>
-                <motion.a 
-                  href="#" 
+                <motion.a
+                  href="#"
                   className="text-gray-300 hover:text-cyan-400 py-2 px-2 transition-colors duration-300 border-b border-gray-700 text-sm sm:text-base"
                   variants={itemVariants}
                 >
                   About Us
                 </motion.a>
-                <motion.a 
-                  href="#" 
+                <motion.a
+                  href="#"
                   className="text-gray-300 hover:text-cyan-400 py-2 px-2 transition-colors duration-300 border-b border-gray-700 text-sm sm:text-base"
                   variants={itemVariants}
                 >
                   Contact Us
                 </motion.a>
-                <motion.div 
+                <motion.div
                   className="flex flex-col sm:flex-row sm:space-x-4 space-y-3 sm:space-y-0 pt-2 px-2"
                   variants={itemVariants}
                 >
-                  <button className="text-white cursor-pointer hover:text-cyan-400 transition-colors duration-300 text-sm sm:text-base py-2">
-                    Login 
-                  </button>
-                  <Button text={"Register"} className="text-sm sm:text-base w-full sm:w-auto" />
+                  <Link href="/auth/login">
+                    <button className="text-white cursor-pointer hover:text-cyan-400 transition-colors duration-300 text-sm sm:text-base py-2">
+                      Login
+                    </button>
+                  </Link>
+                  <Link href="/auth/register">
+                    <Button text={"Register"} className="text-sm sm:text-base w-full sm:w-auto" />
+                  </Link>
                 </motion.div>
               </div>
             </motion.div>
